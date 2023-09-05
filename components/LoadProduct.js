@@ -66,7 +66,7 @@ export default function LoadProduct({ProductGridTitle, Product}){
                 <Center>
                     <DisplayProductGrid>
                         {Product?.length > 0 && Product.map(product => (
-                            <ProdTile{...product}/>
+                            <ProdTile key="NoError" {...product}/>
                         ))}
                     </DisplayProductGrid>
                 </Center>

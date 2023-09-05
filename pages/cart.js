@@ -233,7 +233,7 @@ export default function CartPage(){
                                 </thead>
                                 <tbody>
                                     {products.map(product => (
-                                        <tr>
+                                        <tr key="noError">
                                             <ProductImageCell>
                                                 <ProductImageBox>
                                                     <img src={product.images[0]}/>

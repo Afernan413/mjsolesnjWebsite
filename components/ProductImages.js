@@ -32,6 +32,7 @@ export default function ProductImages({images}){
             <ImageButtons>
                 {images.length>1 && images.slice(0).map(image =>(
                     <ImageButton
+                        key="NoError"
                         active={image===activeImage}
                         onClick={() => setActiveImage(image)}>
                         <img src={image} alt=""/>

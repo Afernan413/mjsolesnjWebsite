@@ -50,7 +50,7 @@ export default function allApparel({allApparel}) {
                     </div>
                     <DisplayProductGrid>
                         {allApparel?.length > 0 && allApparel.map(product => (
-                            <ProdTile{...product}/>
+                            <ProdTile key="NoError" {...product}/>
                         ))}
                     </DisplayProductGrid>
                 </Center>

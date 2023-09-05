@@ -69,7 +69,7 @@ export default function LatestProd({ProductGridTitle, Product}){
                         <Center>
                         <DisplayProductGrid>
                             {Product?.length > 0 && Product.slice(0,10).map(product => (
-                                <ProdTile{...product}/>
+                                <ProdTile key="Noerror" {...product}/>
                             ))}
                         </DisplayProductGrid>
                         </Center>
