@@ -51,8 +51,8 @@ export default function HomePage({TenRecentProductsUsed, TenRecentProductsNew}) 
 <div>
     <FrontBanner>
         <Image style={{
-          border-radius: '5px',
-          max-height: '300px',
+          borderRadius: '5px',
+          height: '300px',
           position: 'relative',
           filter: 'opacity(50%)',
         }} src="https://mjsoles-ecommerce.s3.amazonaws.com/MJSolesBaner.png" alt="Picture of MJSOLES Logo"/>
