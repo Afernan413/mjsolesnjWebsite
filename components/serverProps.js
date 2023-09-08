@@ -14,10 +14,10 @@ export default async function getServerSideProps(){
     const RecentFootwearNew = await Product.find({'properties.Condition': "New", category:'64f4a1bc1824417e859001cb'}, null, {sort: {'_id':-1}});
     const allFootwear = await Product.find({category:'64f4a1bc1824417e859001cb'}, null, {sort: {'_id':-1}});
     const RecentProductsAll = await Product.find({}, null, {sort: {'_id':-1}});
-    const AdidasFootwear = await Product.find({'brand' : 'Adidas'}, null, {sort: {'_id':-1}});
-    const NikeFootwear = await Product.find({'brand' : 'Nike'}, null, {sort: {'_id':-1}});
-    const NewBalFootwear = await Product.find({'brand' : 'New Balance'}, null, {sort: {'_id':-1}});
-    const JordanFootwear = await Product.find({'brand' : 'Jordan'}, null, {sort: {'_id':-1}});
+    const AdidasFootwear = await Product.find({'brand' : 'Adidas', category:'64f4a1bc1824417e859001cb'}, null, {sort: {'_id':-1}});
+    const NikeFootwear = await Product.find({'brand' : 'Nike', category:'64f4a1bc1824417e859001cb'}, null, {sort: {'_id':-1}});
+    const NewBalFootwear = await Product.find({'brand' : 'New Balance', category:'64f4a1bc1824417e859001cb'}, null, {sort: {'_id':-1}});
+    const JordanFootwear = await Product.find({'brand' : 'Jordan', category:'64f4a1bc1824417e859001cb'}, null, {sort: {'_id':-1}});
     const allApparel = await Product.find({category:'64f4a9de4e4de853b84b9a54'}, null, {sort: {'_id':-1}});
     return{
         props: {
