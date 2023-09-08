@@ -50,7 +50,7 @@ export default function HomePage({TenRecentProductsUsed, TenRecentProductsNew}) 
               <Header/>
 <div>
     <FrontBanner>
-        <Image priority={true} src='https://mjsoles-ecommerce.s3.amazonaws.com/MJSolesBaner.png'/>
+        <Image priority={true} src='https://mjsoles-ecommerce.s3.amazonaws.com/MJSolesBaner.png' alt="Picture of MJSOLES Logo"/>
         <Title>Browse All Our Latest Products</Title>
         <SeeAllBtn>
             <PrimaryButton className="myLink" href={'/collections/allProducts'}>See All</PrimaryButton>
