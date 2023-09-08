@@ -4,6 +4,7 @@ import getServerSideProps from "@/components/serverProps";
 import PrimaryButton from "@/components/PrimaryButtons";
 import styled from "styled-components";
 import Footer from "@/components/footer";
+import Image from 'next/image'
 
 
 const Title = styled.h1`
@@ -49,7 +50,7 @@ export default function HomePage({TenRecentProductsUsed, TenRecentProductsNew}) 
               <Header/>
 <div>
     <FrontBanner>
-        <img priority={true} src='https://mjsoles-ecommerce.s3.amazonaws.com/MJSolesBaner.png'/>
+        <Image priority={true} src='https://mjsoles-ecommerce.s3.amazonaws.com/MJSolesBaner.png'/>
         <Title>Browse All Our Latest Products</Title>
         <SeeAllBtn>
             <PrimaryButton className="myLink" href={'/collections/allProducts'}>See All</PrimaryButton>
