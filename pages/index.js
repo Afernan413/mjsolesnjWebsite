@@ -17,7 +17,7 @@ const FrontBanner = styled.div`
   background-color:#1A1A1D;
   justify-content: center;
   position: relative;
-  Image{
+  img{
     border-radius: 5px;
     max-height: 300px;
     position: relative;
@@ -50,12 +50,7 @@ export default function HomePage({TenRecentProductsUsed, TenRecentProductsNew}) 
               <Header/>
 <div>
     <FrontBanner>
-        <Image style={{
-          borderRadius: '5px',
-          height: '300px',
-          position: 'relative',
-          filter: 'opacity(50%)',
-        }} src="https://mjsoles-ecommerce.s3.amazonaws.com/MJSolesBaner.png" alt="Picture of MJSOLES Logo"/>
+        <img src="https://mjsoles-ecommerce.s3.amazonaws.com/MJSolesBaner.png" alt="Picture of MJSOLES Logo"/>
         <Title>Browse All Our Latest Products</Title>
         <SeeAllBtn>
             <PrimaryButton className="myLink" href={'/collections/allProducts'}>See All</PrimaryButton>
